@@ -91,7 +91,7 @@ In this dropdown menu, choose between two strategies: dropping Null values or fi
 st.write(f"#### {title}")    
 st.plotly_chart(fig_results, use_container_width = True)
 
-fig_best = px.bar(df_results_best, x='Model', y='RMSE', color = 'RMSE',color_continuous_scale= 'PuOR')
+fig_best = px.bar(df_results_best, x='Model', y='RMSE', color = 'RMSE',color_continuous_scale= 'purples')
 fig_best.data[0].hovertemplate = f'Model: %{{x}} <br>RMSE: %{{y:.3f}}' 
 
 st.write("""
