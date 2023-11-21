@@ -86,7 +86,7 @@ fig_results.data[0].hovertemplate = f'Model: %{{x}} <br>RMSE: %{{y:.3f}}'
 
 st.write("""
          ### Comparing Model Performances with Null Handling:
-In this dropdown menu, choose between two strategies: dropping Null values or filling them with median values. As you navigate through the different machine learning models, observe how RMSE scores vary based on the selected approach. Keep an eye on the trends — you might notice that filling Null values with medians tends to yield lower RMSE scores. This comparison sheds light on the influence of data preprocessing choices on the accuracy of our predictive models. 
+In this dropdown menu, choose between two strategies: dropping Null values or filling them with median values. As you navigate through the different machine learning models, observe how RMSE scores vary based on the selected approach. This comparison sheds light on the influence of data preprocessing choices on the accuracy of our predictive models.  
          """)
 st.write(f"#### {title}")    
 st.plotly_chart(fig_results, use_container_width = True)
@@ -97,7 +97,7 @@ fig_best.data[0].hovertemplate = f'Model: %{{x}} <br>RMSE: %{{y:.3f}}'
 st.write("""
 ### Model Fine-Tuning: Unlocking the Best Configurations
 
-In our quest for better models, we've fine-tuned the hyperparameters of four powerful models: Decision Tree, ADABoost, Random Forest, and XGBoost. Notice not just the reduction in RMSE for each model, but the improvements made to the XGBoost Model performance in particular. 
+In our quest for better models, we fine-tune the hyperparameters of four powerful models: Decision Tree, ADABoost, Random Forest, and XGBoost. Notice not just the reduction in RMSE for each model, but the improvements made to the XGBoost Model performance in particular. 
 ##### Decision Tree Tuning
 
 Our Decision Tree model undergoes meticulous tuning to optimize its performance. The hyperparameter exploration includes variations in maximum depth, minimum samples for split and leaf, and features. Employing a grid search approach, we systematically analyze different configurations to uncover the set of parameters that yields the most accurate predictions for Vinho Verde wine quality.
